@@ -20,8 +20,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
+    return Scaffold(  
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.white,
         child: Icon(Icons.add, color: Colors.red),
@@ -41,7 +40,6 @@ class MyHomePage extends StatelessWidget {
                   ListView.builder(
                     itemCount: 30,
                     shrinkWrap: true,
-                    physics: FixedExtentScrollPhysics(),
                     itemBuilder: (context, i) {
                       return MailBox();
                     },
